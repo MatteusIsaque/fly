@@ -17,7 +17,7 @@ export default function Page() {
     <main>
       <div className="relative">
         <Image src={City} alt="Smart Cidade da MRV" />
-        <Link className="w-full flex justify-center items-center" href="https://wa.me/5511991151492?text=Ol%C3%A1%2C+sou+corretor+de+im%C3%B3veis+e+gostaria+de+saber+mais+sobre+a+parceria+com+a+Fly+Assessoria+habitacional.">
+        <Link className="w-full flex justify-center items-center" href="https://wa.me/5511991151492?text=Gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+a+smart+cidade.+Voc%C3%AA+pode+me+ajudar%3F">
           <button className="w-full max-w-[340px] bottom-10 m-auto absolute z-20 bg-green-600 py-4 text-2xl font-normal text-white rounded-md flex justify-center items-center gap-2 border-white border-2 max-[712px]:text-xl max-[712px]:max-w-[280px] max-[712px]:p-1 max-[522px]:max-w-[180px] max-[522px]:text-sm max-[479px]:bottom-2"><ImWhatsapp size={18} />SAIBA MAIS</button>
         </Link>
       </div>
@@ -37,7 +37,7 @@ export default function Page() {
       </div>
 
       <div className="fixed right-4 bottom-4 text-white text-5xl bg-green-600 p-4 rounded-lg">
-        <Link href="https://wa.me/5511991151492?text=Ol%C3%A1%2C+sou+corretor+de+im%C3%B3veis+e+gostaria+de+saber+mais+sobre+a+parceria+com+a+Fly+Assessoria+habitacional.">
+        <Link href="https://wa.me/5511991151492?text=Gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+a+smart+cidade.+Voc%C3%AA+pode+me+ajudar%3F">
           <ImWhatsapp />
         </Link>
       </div>
