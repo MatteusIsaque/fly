@@ -23,12 +23,12 @@ export default function Home() {
   const [number, setNumber] = useState("")
   const [message, setMessage] = useState("")
 
-  async function HandleForm() {
-
+  async function HandleForm(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault()
     await axios.post("https://main-form.herokuapp.com/ticonnected", {
-      "emailTo": "matteus.isaque28@gmail.com",
+      "emailTo": "jcbbb86@gmail.com",
       "title": "Formulario de lead",
-      "number": number,
+      "phone": number,
       "email": email,
       "message": message
     })
@@ -109,8 +109,8 @@ export default function Home() {
 
           <form className="flex flex-col gap-y-4 mt-20" onSubmit={HandleForm}>
             <input className="bg-white py-2 px-2 border-[1px] border-[#2f2f2f] rounded-md border-solid" type="text" required placeholder="Email" onChange={(e) => { setEmail(e.target.value) }} />
-            <input className="bg-white py-2 px-2 border-[1px] border-[#2f2f2f] rounded-md border-solid" type="text" required placeholder="Numero" onChange={(e) => { setNumber(e.target.value) }}/>
-            <textarea className="bg-white py-2 px-2 border-[1px] border-[#2f2f2f] rounded-md border-solid h-28" required placeholder="Mensagem" onChange={(e) => { setMessage(e.target.value) }}/>
+            <input className="bg-white py-2 px-2 border-[1px] border-[#2f2f2f] rounded-md border-solid" type="text" required placeholder="Numero" onChange={(e) => { setNumber(e.target.value) }} />
+            <textarea className="bg-white py-2 px-2 border-[1px] border-[#2f2f2f] rounded-md border-solid h-28" required placeholder="Mensagem" onChange={(e) => { setMessage(e.target.value) }} />
             <div className="flex justify-start gap-x-4">
               <input type="checkbox" />
               <p>Eu concordo em fornecer meus dados para que a empresa entre em contato comigo</p>
@@ -120,8 +120,17 @@ export default function Home() {
 
         </div>
 
+        <div className="fixed right-4 bottom-4 text-white text-5xl bg-green-600 p-4 rounded-lg">
+          <Link href="https://wa.me/5511991151492?text=Gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+a+smart+cidade.+Voc%C3%AA+pode+me+ajudar%3F">
+            <ImWhatsapp />
+          </Link>
+        </div>
+
+
+
 
       </main >
+      <div className="text-center py-2 mt-10 text-white bg-slate-800">Todos os <Link href="/politica-de-privacidade-e-termos-de-uso">termos de uso e politica de privacidade</Link></div>
 
       <div className={`fixed max-w-[80%] mx-[10%] flex justify-between items-center w-full bottom-10 bg-slate-300 px-10 py-4 ${open === true ? "block" : "hidden"}`}>
         <p>Ao permanecer nesta página, você estará de acordo com nossa <Link href="/politica-de-privacidade-e-termos-de-uso">politica de privacidade e nossos termos de uso</Link></p>
