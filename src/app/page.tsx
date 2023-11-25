@@ -6,7 +6,7 @@ import Image from "next/image";
 import Image1 from './../img/img2/analisamo-os-documentos.webp'
 import Image2 from './../img/img2/analise-de-documento.webp'
 import Image3 from './../img/img2/encaminhamento-para-aprovação.webp'
-import Acordo from './../img/img2/parcelas.webp'
+import Acordo from './../img/acordo.jpeg'
 import Link from "next/link";
 
 import Comentario1 from './../img/comentario/Camada5.webp'
@@ -47,7 +47,7 @@ export default function Home() {
       <main className=" max-w-[70%] m-auto max-[889px]:max-w-[90%]">
         <div className="flex max-[889px]:flex-col max-[889px]:mb-10 max-[550px]:text-center gap-x-4">
           <div className="flex-1">
-            <Image src={Acordo} alt="fly acessoria chefamento de serviço" />
+            <Image src={Image4} alt="fly acessoria chefamento de serviço" />
           </div>
           <div className="flex flex-col justify-center flex-[0.8]">
             <h1 className="text-4xl font-bold mb-2 max-[550px]:text-2xl ">
@@ -74,7 +74,7 @@ export default function Home() {
 
           <div className="flex gap-x-4 max-[880px]:flex-col">
             <div>
-              <Image src={Image4} alt="fly" />
+              <Image src={Acordo} alt="fly" />
               <h3 className="text-xl font-bold mb-2 mt-4">Encaminhado Para Aprovação</h3>
               <p>Estando tudo certo, seus documentos são enviados para aprovar seu crédito.</p>
             </div>
