@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 
-import Acordo from './../img/acordo.jpg'
+import Acordo from './../img/acordo.jpeg'
 import Image1 from './../img/img2/analisamo-os-documentos.webp'
 import Image2 from './../img/img2/analise-de-documento.webp'
 import Image3 from './../img/img2/encaminhamento-para-aprovação.webp'
