@@ -25,14 +25,20 @@ export default function Home() {
 
   async function HandleForm(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
-    await axios.post("https://main-form.herokuapp.com/ticonnected", {
-      "emailTo": "jcbbb86@gmail.com",
-      "title": "Formulario de lead",
-      "phone": number,
-      "email": email,
-      "message": message
-    })
+    
+    try {
+      await axios.post("https://main-form.herokuapp.com/ticonnected", {
+        "emailTo": "jcbbb86@gmail.com",
+        "title": "Formulario de lead",
+        "phone": number,
+        "email": email,
+        "message": message
+      })
 
+      window.location.reload()
+    } catch (error) {
+      
+    }
   }
 
   return (
@@ -51,7 +57,7 @@ export default function Home() {
               A Fly Assessoria trabalha na aprovação do crédito imobiliário de pessoas que não tem restrição no nome.
             </p>
 
-            <Link className="w-full" href="https://wa.me/5511991151492?text=Ol%C3%A1%2C+sou+corretor+de+im%C3%B3veis+e+gostaria+de+saber+mais+sobre+a+parceria+com+a+Fly+Assessoria+habitacional.">
+            <Link className="w-full" href="https://wa.me/5511991151492?text=Ol%C3%A1%21+Gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+a+aprova%C3%A7%C3%A3o+do+financiamento+im%C3%B3biliario.">
               <button className="w-full bg-green-600 py-2 text-xl font-normal text-white rounded-md flex justify-center items-center gap-2"><ImWhatsapp size={18} />SAIBA MAIS</button>
             </Link>
           </div>
@@ -121,7 +127,7 @@ export default function Home() {
         </div>
 
         <div className="fixed right-4 bottom-4 text-white text-5xl bg-green-600 p-4 rounded-lg">
-          <Link href="https://wa.me/5511991151492?text=Gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+a+smart+cidade.+Voc%C3%AA+pode+me+ajudar%3F">
+          <Link href="https://wa.me/5511991151492?text=Ol%C3%A1%21+Gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+a+aprova%C3%A7%C3%A3o+do+financiamento+im%C3%B3biliario.">
             <ImWhatsapp />
           </Link>
         </div>
