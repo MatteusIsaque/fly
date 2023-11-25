@@ -25,7 +25,7 @@ export default function Home() {
 
   async function HandleForm(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
-    
+
     try {
       await axios.post("https://main-form.herokuapp.com/ticonnected", {
         "emailTo": "jcbbb86@gmail.com",
@@ -37,7 +37,7 @@ export default function Home() {
 
       window.location.reload()
     } catch (error) {
-      
+
     }
   }
 
@@ -50,7 +50,7 @@ export default function Home() {
           </div>
           <div className="flex flex-col justify-center flex-[0.8]">
             <h1 className="text-4xl font-bold mb-2 max-[550px]:text-2xl ">
-              Seja um parceiro da Fly Assessoria Habitacional
+              Tenha o financiamento imobiliário aprovado para comprar a casa própria
             </h1>
             <p>
               Tenha o financiamento imobiliário aprovado para comprar a casa própria
