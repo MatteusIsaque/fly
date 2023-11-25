@@ -2,16 +2,17 @@
 
 import Image from "next/image";
 
-import Acordo from './../img/acordo.jpeg'
+// import Acordo from './../img/acordo.jpeg'
 import Image1 from './../img/img2/analisamo-os-documentos.webp'
 import Image2 from './../img/img2/analise-de-documento.webp'
 import Image3 from './../img/img2/encaminhamento-para-aprovação.webp'
-import Image4 from './../img/img2/parcelas.webp'
+import Acordo from './../img/img2/parcelas.webp'
 import Link from "next/link";
 
 import Comentario1 from './../img/comentario/Camada5.webp'
 import Comentario2 from './../img/comentario/Camada7.webp'
 import Comentario3 from './../img/comentario/Camada9.webp'
+import Image4 from './../img/comentario/comment1.jpeg'
 
 import { ImWhatsapp } from 'react-icons/im'
 import { useState } from "react";
@@ -44,7 +45,7 @@ export default function Home() {
   return (
     <>
       <main className=" max-w-[70%] m-auto max-[889px]:max-w-[90%]">
-        <div className="flex max-[889px]:flex-col max-[889px]:mb-10 max-[550px]:text-center">
+        <div className="flex max-[889px]:flex-col max-[889px]:mb-10 max-[550px]:text-center gap-x-4">
           <div className="flex-1">
             <Image src={Acordo} alt="fly acessoria chefamento de serviço" />
           </div>
@@ -138,10 +139,10 @@ export default function Home() {
       </main >
       <div className="text-center py-2 mt-10 text-white bg-slate-800">Todos os <Link href="/politica-de-privacidade-e-termos-de-uso">termos de uso e politica de privacidade</Link></div>
 
-      <div className={`fixed max-w-[80%] mx-[10%] flex justify-between items-center w-full bottom-10 bg-slate-300 px-10 py-4 ${open === true ? "block" : "hidden"}`}>
+      <div className={`fixed max-w-[80%] mx-[10%] flex justify-between items-center w-full bottom-10 bg-slate-300 px-10 py-4 ${open === true ? "block" : "hidden"} max-[450px]:flex-col max-[450px]:gap-y-2`}>
         <p>Ao permanecer nesta página, você estará de acordo com nossa <Link href="/politica-de-privacidade-e-termos-de-uso">politica de privacidade e nossos termos de uso</Link></p>
 
-        <button className="bg-slate-500 px-10 py-2 text-white rounded-md" onClick={() => { setOpen(!open) }}>EU ACEITO</button>
+        <button className="bg-slate-500 px-10 py-2 text-white rounded-md max-[450px]:w-full" onClick={() => { setOpen(!open) }}>EU ACEITO</button>
       </div>
     </>
   )
