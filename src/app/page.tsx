@@ -12,7 +12,7 @@ import Link from "next/link";
 import Comentario1 from './../img/comentario/Camada5.webp'
 import Comentario2 from './../img/comentario/Camada7.webp'
 import Comentario3 from './../img/comentario/Camada9.webp'
-import Image4 from './../img/comentario/comment1.jpeg'
+import Image4 from './../img/comentario/comment1.jpg'
 
 import { ImWhatsapp } from 'react-icons/im'
 import { useState } from "react";
@@ -51,11 +51,12 @@ export default function Home() {
           </div>
           <div className="flex flex-col justify-center flex-[0.8]">
             <h1 className="text-4xl font-bold mb-2 max-[550px]:text-2xl ">
-              Tenha o financiamento imobiliário aprovado para comprar a casa própria
+              SEU FINANCIAMENTO IMOBILIÁRIO FOI
+              NEGADO OU ESTÁ SEM CRÉDITO ?
             </h1>
             <p>
-              Tenha o financiamento imobiliário aprovado para comprar a casa própria
-              A Fly Assessoria trabalha na aprovação do crédito imobiliário de pessoas que não tem restrição no nome.
+              Tenha o financiamento imobiliário aprovado para comprar a casa própria! Pague somente após ter o crédito aprovado.
+              Rápido, fácil e sem burocracia.
             </p>
 
             <Link className="w-full" href="https://wa.me/5511991151492?text=Ol%C3%A1%21+Gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+a+aprova%C3%A7%C3%A3o+do+financiamento+im%C3%B3biliario.">
